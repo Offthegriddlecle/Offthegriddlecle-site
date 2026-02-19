@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Off the GRIDdle | Cleveland Food Truck Catering</title>
+  <meta name="description" content="Off the GRIDdle is a Cleveland-area food truck serving crowd favorites and catering events of all sizes. Book us today." />
+  <style>
+    :root { --bg:#0b0c10; --card:#11131a; --text:#f5f7ff; --muted:#b7bdd6; --line:#23263a; --accent:#ffffff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1a2040 0%, rgba(26,32,64,0) 60%),
+                  radial-gradient(900px 500px at 80% 0%, #2c1d3d 0%, rgba(44,29,61,0) 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.4;
+    }
+    a { color: var(--text); }
+    .wrap { max-width: 1060px; margin: 0 auto; padding: 28px 18px 72px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+    .brand { display:flex; flex-direction:column; gap:4px; }
+    .brand strong { font-size: 18px; letter-spacing: .2px; }
+    .brand span { color: var(--muted); font-size: 13px; }
+    nav { display:flex; gap:14px; flex-wrap:wrap; }
+    nav a { text-decoration:none; color: var(--muted); font-size: 14px; padding: 8px 10px; border-radius: 10px; }
+    nav a:hover { background: rgba(255,255,255,.06); color: var(--text); }
+    .hero { margin-top: 26px; padding: 28px; border:1px solid var(--line); border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      display:grid; grid-template-columns: 1.2fr .8fr; gap: 18px;
+    }
+    .hero h1 { margin: 0 0 10px; font-size: 36px; }
+    .hero p { margin: 0 0 18px; color: var(--muted); font-size: 16px; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; }
+    .btn { display:inline-block; text-decoration:none; padding: 12px 14px; border-radius: 12px; border:1px solid var(--line); font-weight:600; }
+    .btn.primary { background: #ffffff; color:#0b0c10; border-color: transparent; }
+    .btn.primary:hover { filter: brightness(.95); }
+    .btn.ghost { background: rgba(255,255,255,.06); color: var(--text); }
+    .btn.ghost:hover { background: rgba(255,255,255,.1); }
+    .kpis { display:grid; gap:10px; }
+    .kpi { padding: 14px; border:1px solid var(--line); border-radius: 14px; background: rgba(0,0,0,.18); }
+    .kpi strong { display:block; font-size: 14px; }
+    .kpi span { color: var(--muted); font-size: 13px; }
+
+    section { margin-top: 28px; }
+    h2 { font-size: 20px; margin: 0 0 12px; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .card { border:1px solid var(--line); border-radius: 16px; padding: 16px; background: rgba(0,0,0,.18); }
+    .card p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+
+    .menu { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .item { display:flex; justify-content:space-between; gap:12px; border-bottom: 1px dashed rgba(255,255,255,.12); padding: 10px 0; }
+    .item:last-child { border-bottom: none; }
+    .item span { color: var(--muted); }
+
+    .gallery { display:grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .ph { aspect-ratio: 1 / 1; border-radius: 14px; border:1px solid var(--line);
+      background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+      display:flex; align-items:center; justify-content:center; color: rgba(255,255,255,.35); font-size: 12px;
+    }
+
+    form { display:grid; gap:10px; }
+    input, textarea { width:100%; padding: 12px 12px; border-radius: 12px; border:1px solid var(--line);
+      background: rgba(255,255,255,.04); color: var(--text); font-size: 14px;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    footer { margin-top: 36px; color: var(--muted); font-size: 13px; display:flex; justify-content:space-between; gap: 10px; flex-wrap:wrap; }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .menu { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <strong>Off the GRIDdle</strong>
+        <span>Cleveland-area food truck • Catering any event</span>
+      </div>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#catering">Catering</a>
+        <a href="#photos">Photos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <h1>Food truck favorites — fast, hot, and made for crowds.</h1>
+          <p>Book Off the GRIDdle for parties, corporate lunches, school events, festivals, and everything in between.</p>
+          <div class="cta">
+            <a class="btn primary" href="#catering">Request catering</a>
+            <a class="btn ghost" href="#menu">View menu</a>
+          </div>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>12+ years</strong><span>Serving Cleveland & surrounding counties</span></div>
+          <div class="kpi"><strong>Any size event</strong><span>From small parties to big crowds</span></div>
+          <div class="kpi"><strong>Quick setup</strong><span>Simple booking, reliable service</span></div>
+        </div>
+      </div>
+
+      <section>
+        <h2>Why people book us</h2>
+        <div class="grid">
+          <div class="card"><strong>Consistent crowd-pleasers</strong><p>Signature sandwiches, tacos, and fries with garlic aioli.</p></div>
+          <div class="card"><strong>Easy planning</strong><p>Clear communication, simple logistics, and on-time service.</p></div>
+          <div class="card"><strong>Perfect for events</strong><p>Corporate, schools, weddings, birthdays, festivals, you name it.</p></div>
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2>Menu</h2>
+        <div class="card">
+          <div class="menu">
+            <div>
+              <div class="item"><strong>Cuban</strong><span>$13</span></div>
+              <div class="item"><strong>Chicken Bacon Club</strong><span>$14</span></div>
+              <div class="item"><strong>Gyro</strong><span>$13</span></div>
+              <div class="item"><strong>Tacos</strong><span>$15</span></div>
+            </div>
+            <div>
+              <div class="item"><strong>Buffalo</strong><span>$13</span></div>
+              <div class="item"><strong>Big Pig</strong><span>$14</span></div>
+              <div class="item"><strong>Acapulco</strong><span>$12</span></div>
+              <div class="item"><strong>Veggie Pita</strong><span>$12</span></div>
+              <div class="item"><strong>Fries + garlic aioli</strong><span>$5</span></div>
+            </div>
+          </div>
+          <p style="margin-top:12px; color: var(--muted); font-size: 13px;">Menu may vary by event. Ask about dietary options.</p>
+        </div>
+      </section>
+
+      <section id="catering">
+        <h2>Catering inquiry</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>How it works</strong>
+            <p>Send your date, location, estimated guest count, and timing. We’ll reply with availability and next steps.</p>
+            <p style="margin-top:10px;">Prefer texting/calling? Add your number and we’ll reach out.</p>
+          </div>
+          <div class="card" style="grid-column: span 2;">
+            <!-- Replace action URL with your Formspree endpoint if you use it -->
+            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+              <input name="name" placeholder="Name" required />
+              <input name="email" placeholder="Email" type="email" required />
+              <input name="phone" placeholder="Phone (optional)" />
+              <input name="date" placeholder="Event date" />
+              <input name="location" placeholder="Event location (city/venue)" />
+              <textarea name="details" placeholder="Tell us about the event (guest count, time, vibe, any notes)…"></textarea>
+              <button class="btn primary" type="submit">Send request</button>
+            </form>
+            <p style="margin-top:10px; color: var(--muted); font-size: 13px;">
+              Tip: For best results, use Formspree or Netlify Forms instead of mailto (mail apps can be flaky).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="photos">
+        <h2>Photos</h2>
+        <div class="gallery">
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+        </div>
+        <p style="margin-top:10px; color: var(--muted); font-size: 13px;">Drop your best food + truck photos here later.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Email</strong>
+            <p>youremail@example.com</p>
+          </div>
+          <div class="card">
+            <strong>Phone</strong>
+            <p>(xxx) xxx-xxxx</p>
+          </div>
+          <div class="card">
+            <strong>Social</strong>
+            <p>Instagram / Facebook</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>© <span id="yr"></span> Off the GRIDdle</span>
+        <span>Serving Cleveland & surrounding counties</span>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
